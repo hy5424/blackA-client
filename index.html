@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo</title>
+<script src="js/jquery/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/socket.io.js"></script>
+
+</head>
+<body>
+   
+</body>
+<script type="text/javascript">
+	//创建TCP连接
+	var socket = io.connect('http://127.0.0.1:8088');
+	//连接成功后会监听到
+	socket.on('connect',function() {
+		output('<span>连接成功</span>');
+	});
+    
+	socket.on('connecting',function() {
+        output('<span>正在连接...</span>');
+    });
+    
+    socket.on('disconnect',function() {
+        output('<span>断开连接! </span>');
+    });
+    
+    socket.on('reconnecting',function() {
+        output('<span>正在重连...</span>');
+    });
+    
+    socket.on('reconnect',function() {
+        output('<span>成功重连！</span>');
+    });
+    
+    socket.on('connect_failed',function() {
+        output('<span>连接失败！</span>');
+    });
+    
+    //想要断开连接调用此方法
+    function sendDisconnect() {
+        socket.disconnect();
+    }
+    //下面的testMessage是自定义的。
+    socket.emit('testMessage', 'Hello',function(){
+    	output('<span>' + data + '</span>');
+    });
+    
+    //socket.emit('testMessage', '你好',function(){
+    //	output('<span>' + data + '</span>');
+    //});
+    //这里是监听服务端返回的testMessage事件
+    //socket.on('testMessage',function(data){
+    //	  output('<span>' + data + '</span>');
+    //});
+    
+    function output(message) {
+        var currentTime = "<span class='time' >" + new Date().toLocaleString() + "</span>";
+        var element = $("<div>" + currentTime + " " + message + "</div>");
+        $('body').prepend(element);
+    }
+    
+</script>
+</html>
