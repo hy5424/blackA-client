@@ -1,0 +1,93 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>websocket</title>
+</head>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+<body>
+	Welcome   用户id<input id="uid" type="text" />
+	<br />
+	<button onclick="send()" id="zhunbei">准备</button>
+	<hr />
+	<button onclick="closeWebSocket()">退出房间</button>
+	<hr />
+	<input type="image" src="image/out1.png"/>
+	<input type="image" src="image/pass.png">
+	<input type="text" id="cards" />
+	<div id="message">
+		
+	</div>
+	
+	<script type="text/javascript">
+		var websocket = null;
+
+		//将消息显示在网页上  
+		function setMessageInnerHTML(data) {
+			//document.getElementById('message').innerHTML = innerHTML + '<br/>';
+			var html = ''
+			if(data!=null){
+				data = data.replace("[","");
+				data = data.replace("]","");
+				var da = data.split(",");
+				for(var i = 0;i<da.length;i++){
+					html+='<img  src="image/'+da[i].trim()+'.png" id="'+da[i].trim()+'" onclick="chupai('+da[i].trim()+')" style="margin-top:20px"/>'
+				}
+				$('#message').html(html);
+			}
+		}
+		var card = ""
+		function chupai(num){
+			var id = document.getElementById(num);
+			$(id).css({"margin-top":"10px","border-bottom-width":"10px","border-botton-color":"white","border-bottom-style":"solid"});
+			card+=num+",";
+			$('#cards').val(card);
+		}
+
+		//关闭WebSocket连接  
+		function closeWebSocket() {
+			websocket.close();
+		}
+
+		//发送消息  
+		function send() {
+			
+			//判断当前浏览器是否支持WebSocket  
+			if ('WebSocket' in window) {
+				websocket = new WebSocket("ws://localhost:8080/blackA/websocket");
+			} else {
+				alert('当前浏览器 Not support websocket')
+			}
+			
+			//连接发生错误的回调方法  
+			websocket.onerror = function() {
+				//alert("WebSocket连接发生错误");
+			};
+	
+			//连接成功建立的回调方法  
+			websocket.onopen = function() {
+				//alert("WebSocket连接成功");
+			}
+	
+			//接收到消息的回调方法  
+			websocket.onmessage = function(event) {
+				setMessageInnerHTML(event.data);
+			}
+	
+			//连接关闭的回调方法  
+			websocket.onclose = function() {
+				//alert("WebSocket连接关闭");
+			}
+	
+			//监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。  
+			window.onbeforeunload = function() {
+				closeWebSocket();
+			}
+				
+			$('#zhunbei').attr("disabled", true);
+		}
+		
+	</script>
+</body>
+
+</html>

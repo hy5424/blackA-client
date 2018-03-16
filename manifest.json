@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "H5277A11B",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "blackA-client",/*应用名称，程序桌面图标名称*/
@@ -199,5 +199,25 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"js/socket.io.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"test.html",
+				"js/socket.io.slim.js.map",
+				"js/socket.io.js.map",
+				"js/socket.io.slim.js",
+				"js/jquery-2.1.4.min.js"
+			]
+		}
+	}
 }
