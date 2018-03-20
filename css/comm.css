@@ -1,0 +1,453 @@
+/*!
+ * ======================================================================
+ *  comm css
+ *  所有页面应当link此css文件,便于简单适配手机各个分辨率，建议单位使用rem实现
+ *  css的响应式缩放。
+ *  此文件中：
+ *  1.cm 前缀为 共通模块
+ *  2.cg 前缀为 共通布局
+ *  此外，还重新定义了部分mui中的原有css
+ *  =====================================================================
+ */
+
+* {
+	font-family: Helvetica, "Microsoft Yahei", "微软雅黑", Arial, sans-serif;
+}
+
+@media screen and (min-width:240px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 9px
+	}
+}
+
+@media screen and (min-width:320px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 12px
+	}
+}
+
+@media screen and (min-width:380px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 14px
+	}
+}
+
+@media screen and (min-width:420px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 16px
+	}
+}
+
+@media screen and (min-width:450px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 17px
+	}
+}
+
+@media screen and (min-width:480px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 18px
+	}
+}
+
+@media screen and (min-width:540px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 20.25px
+	}
+}
+
+@media screen and (min-width:600px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 22px
+	}
+}
+
+@media screen and (min-width:640px) {
+	body,
+	button,
+	html,
+	input,
+	select,
+	textarea {
+		font-size: 24px
+	}
+}
+
+
+/**
+ *  html body
+ */
+
+html,
+body {
+	background-color: #fff;
+}
+
+
+/*
+body article{
+	margin-top: 45px;
+	background-color: #fff;
+}*/
+
+
+/**
+ *  mui覆盖
+ */
+
+.mui-bar-nav~.mui-content {
+	background-color: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	margin-top: 44px;
+	padding-bottom: 44px;
+}
+
+
+/******* 标题栏  ********/
+
+.mui-bar.mui-bar-nav {
+	background-color: #755cd2;
+}
+
+.mui-bar a,
+.mui-bar h1 {
+	color: #fff;
+}
+
+.mui-btn.mui-btn-block {
+	padding: 10px 10px;
+}
+
+.mui-modal {
+	left: 0;
+}
+
+
+/**
+ * ajax error
+ */
+
+.cm-request-error {
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+/**
+ * ajax timeout
+ */
+
+.cm-request-timeout {
+	background-color: #fff;
+	position: absolute;
+	padding-top: 0;
+	top: 45px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+
+/**
+ * init-loading
+ */
+
+.cm-init {
+	padding-top: 5rem;
+	width: 100%;
+}
+
+.cm-init-loading {
+	width: 10rem !important;
+}
+
+.cg-float-right {
+	float: right;
+}
+
+.cg-float-left {
+	float: left;
+}
+
+.cg-text-right {
+	text-align: right;
+}
+
+.cg-text-center {
+	text-align: center;
+}
+
+
+/**
+ *  底部步骤按钮
+ *  包括上一页、下一页
+ */
+
+.cm-footers-steps {
+	text-align: center;
+}
+
+.cm-footers-steps-wrapper {
+	text-align: center;
+	padding: 0 15px;
+}
+
+.cm-footers-steps-button {
+	width: 100%;
+	background: #39b9ea;
+	color: white;
+}
+
+.mui-btn-blue,
+.mui-btn-primary,
+input[type=submit] {
+	border: 1px solid #39b9ea;
+	background-color: #39b9ea;
+}
+
+
+/**
+ *  底部提交按钮
+ */
+
+.cm-btn-wrap {
+	margin: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+
+.cm-btn-submit {
+	border: none;
+	background-color: #39b9ea;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+
+
+/**
+ *  表单内容部分
+ * 
+ */
+
+form .mui-table-view-cell {
+	padding: 10px 0;
+}
+
+form .mui-table-view-cell:after {
+	left: 0;
+}
+
+form .mui-input-row label {
+	padding: 11px 0;
+}
+
+form.mui-input-group .mui-input-row:after {
+	left: 0;
+}
+
+form .mui-input-row label~input,
+form .mui-input-row label~select,
+form .mui-input-row label~textarea {
+	float: right;
+	width: 65%;
+	margin-bottom: 0;
+	border: 0;
+	padding: 11px 0;
+	height: auto;
+	line-height: normal;
+	color: #007aff;
+}
+
+form.input-style {
+	border-style: none;
+	width: 70%;
+}
+
+.cg-form-title-left {
+	font-size: larger;
+}
+
+.cg-font-orange {
+	color: orange;
+}
+
+.cg-font-blue {
+	color: #007AFF;
+}
+
+.reqired {
+	color: #CF2D28;
+}
+
+.warn {
+	padding: 20px 15px;
+	font-size: 1.3rem;
+}
+
+.search-bar {
+	margin-top: 44px;
+}
+
+.search-img {
+	position: absolute;
+	top: 52px;
+	right: 17px;
+	widows: 10px;
+	height: 17px;
+}
+
+.info_form.mui-table-view {
+	margin-bottom: 20px;
+}
+
+.view-style {
+	padding: 11px 15px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.text-style {
+	margin-top: 10px;
+}
+
+.detail-input-style {
+	border: none;
+	height: 45px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+
+/********  vue  ********/
+
+[v-cloak] {
+	display: none;
+}
+
+
+/***************************
+ * 
+		加载动画 loading
+ */
+
+.cm-load{
+	min-width:54px;
+	max-width: 108px;
+	padding-left: 9px;
+	padding-right: 9px;
+	background:#000;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left: -27px;
+	margin-top: -27px;
+	border-radius: 9px;
+}
+
+/** 加载动画的静态样式 **/
+.cm-load-line{
+	margin: 9px auto;
+	margin-bottom: 0;
+	width: 36px;
+	height: 36px;
+	position: relative;
+}
+.cm-load-tip{
+	text-align: center;
+	color: #fff;
+	word-wrap : break-word ;
+	margin-bottom: 9px;
+}
+.cm-load-line div{
+	position:absolute;
+	left:16px;
+	top:0;
+	width:3px;
+	height:36px;
+}
+.cm-load-line div:before,
+.cm-load-line div:after{
+	content:'';
+	display:block;
+	height:50%;
+	background:#fcfcfc;
+	border-radius:5px;
+}
+.cm-load-line div:nth-child(2){-webkit-transform:rotate(30deg);}
+.cm-load-line div:nth-child(3){-webkit-transform:rotate(60deg);}
+.cm-load-line div:nth-child(4){-webkit-transform:rotate(90deg);}
+.cm-load-line div:nth-child(5){-webkit-transform:rotate(120deg);}
+.cm-load-line div:nth-child(6){-webkit-transform:rotate(150deg);}
+.cm-load-circlebg{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:18px;
+	height:18px;
+	margin:-9px 0 0 -9px;
+	background:#000;
+	border-radius:18px;
+}
+
+/** 加载动画 **/
+@-webkit-keyframes load{
+    0%{opacity:0;}
+     100%{opacity:1;}
+}
+.cm-load-line div:nth-child(1):before{-webkit-animation:load 1.2s linear 0s infinite;}
+.cm-load-line div:nth-child(2):before{-webkit-animation:load 1.2s linear 0.1s infinite;}
+.cm-load-line div:nth-child(3):before{-webkit-animation:load 1.2s linear 0.2s infinite;}
+.cm-load-line div:nth-child(4):before{-webkit-animation:load 1.2s linear 0.3s infinite;}
+.cm-load-line div:nth-child(5):before{-webkit-animation:load 1.2s linear 0.4s infinite;}
+.cm-load-line div:nth-child(6):before{-webkit-animation:load 1.2s linear 0.5s infinite;}
+.cm-load-line div:nth-child(1):after{-webkit-animation:load 1.2s linear 0.6s infinite;}
+.cm-load-line div:nth-child(2):after{-webkit-animation:load 1.2s linear 0.7s infinite;}
+.cm-load-line div:nth-child(3):after{-webkit-animation:load 1.2s linear 0.8s infinite;}
+.cm-load-line div:nth-child(4):after{-webkit-animation:load 1.2s linear 0.9s infinite;}
+.cm-load-line div:nth-child(5):after{-webkit-animation:load 1.2s linear 1s infinite;}
+.cm-load-line div:nth-child(6):after{-webkit-animation:load 1.2s linear 1.1s infinite;}

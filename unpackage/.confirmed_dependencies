@@ -1,0 +1,865 @@
+{
+	"app/login/login.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/require/require.js",
+			"app/login/login.css",
+			"config/config.js",
+			"app/login/login.js",
+			"resource/images/login_logo.png",
+			"lib/mui/js/mui.poppicker.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/app.js",
+			"lib/md5.js",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/appPlus.js",
+			"lib/mui/js/mui.pullToRefresh.material.js",
+			"app/login/app-update.js",
+			"lib/validate.js",
+			"css/comm.css",
+			"app/login/update.js"
+		],
+		"refer": [
+			"app/home/main.html",
+			"app/password/reset/reset.html"
+		]
+	},
+	"app/login/guide.html": {
+		"resources": [
+			"lib/mui/js/mui.poppicker.js",
+			"resource/images/4.jpg",
+			"lib/mui/js/mui.picker.js",
+			"resource/images/1.jpg",
+			"resource/images/3.jpg",
+			"resource/images/2.jpg",
+			"app/login/guide.js",
+			"config/config.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/appPlus.js",
+			"lib/require/require.js",
+			"resource/images/5.jpg",
+			"lib/mui/js/mui.pullToRefresh.material.js"
+		],
+		"refer": [
+			"app/login/login.html"
+		]
+	},
+	"app/home/main.html": {
+		"resources": [
+			"app/home/main.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/js/mui.poppicker.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/appPlus.js",
+			"app/home/main.css",
+			"lib/require/require.js",
+			"config/config.js",
+			"resource/images/home_shouye_blue.png",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/app.js",
+			"lib/mui/js/mui.pullToRefresh.material.js",
+			"app/home/tab-home.html",
+			"resource/images/home_kehu_gary.png",
+			"resource/images/home_faxian_gary.png",
+			"resource/images/home_wo_gary.png",
+			"resource/images/home_faxian_blue.png",
+			"resource/images/home_kehu_blue.png",
+			"resource/images/home_shouye_gary.png",
+			"resource/images/home_wo_blue.png",
+			"lib/validate.js",
+			"app/home/head/head.html",
+			"css/comm.css"
+		],
+		"refer": [
+			"app/home/tab-discovery.html",
+			"app/setting/setting.html",
+			"app/customer/customer.html",
+			"app/home/tab-home.html",
+			"app/find/find.html",
+			"app/find/business/find.html",
+			"app/customer/list/list.html",
+			"app/home/head/head.html",
+			"app/find/find/find.html",
+			"app/play/play.html"
+		]
+	},
+	"app/home/tab-home.html": {
+		"resources": [
+			"app/home/tab-home.js",
+			"app/image/banner01.png",
+			"lib/mui/css/mui.picker.all.css",
+			"lib/mui/fonts/mui.ttf",
+			"resource/images/chognzhi.png",
+			"resource/images/camera.png",
+			"app/home/tab-home.css",
+			"resource/images/order_pic.png",
+			"lib/validate.js",
+			"app/image/banner02.png",
+			"lib/validateUtil.js",
+			"resource/images/bill_pic.png",
+			"lib/mui/css/mui.min.css",
+			"lib/require/require.js"
+		],
+		"refer": []
+	},
+	"app/setting/setting.html": {
+		"resources": [
+			"resource/images/zhangdan.png",
+			"resource/images/xiugaimima.png",
+			"resource/images/tuichu.png",
+			"resource/images/zichan.png",
+			"resource/images/lianxiwmen.png",
+			"resource/images/zhongchengbao.png",
+			"resource/images/jingjiren.png",
+			"lib/md5.js",
+			"resource/images/banben.png",
+			"app/setting/setting.css",
+			"resource/images/daili.png",
+			"resource/images/tuijian.png",
+			"app/setting/setting.js",
+			"resource/images/touxiang.png",
+			"lib/mui/fonts/mui.ttf",
+			"resource/images/renzheng.png",
+			"lib/mui/js/mui.poppicker.js",
+			"resource/images/tuandui.png",
+			"resource/images/kadan.png",
+			"css/comm.css",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/vue.js",
+			"resource/images/yaoqing.png",
+			"lib/require/require.js",
+			"resource/images/tikuan.png",
+			"lib/mui/js/mui.pullToRefresh.material.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/mui/js/mui.js",
+			"config/config.js"
+		],
+		"refer": [
+			"app/setting/MyAsset.html",
+			"app/user/update/update.html",
+			"app/login/login.html",
+			"app/user/userInfo/userInfo.html",
+			"app/card/list/card.html",
+			"app/mall/order/list/list.html",
+			"app/team/list/list.html",
+			"app/book/list/list.html",
+			"app/asset/asset.html",
+			"app/password/change/change.html",
+			"app/user/base/user.html"
+		]
+	},
+	"app/home/tab-discovery.html": {
+		"resources": [
+			"resource/images/oilcard.png",
+			"resource/images/phonepay.png",
+			"resource/images/news.png",
+			"resource/images/more.png",
+			"resource/images/nationprice.png",
+			"resource/images/lifepay.png",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js"
+		],
+		"refer": []
+	},
+	"app/customer/customer.html": {
+		"resources": [
+			"app/customer/customer.js",
+			"app/customer/customer.css",
+			"resource/images/car02.png",
+			"resource/images/car0340.png"
+		],
+		"refer": []
+	},
+	"app/find/find.html": {
+		"resources": [
+			"resource/images/oilcard.png",
+			"app/find/find.css",
+			"css/comm.css",
+			"app/find/find.js"
+		],
+		"refer": []
+	},
+	"app/setting/MyAsset.html": {
+		"resources": [
+			"app/setting/MyAsset.js"
+		],
+		"refer": []
+	},
+	"app/find/business/find.html": {
+		"resources": [
+			"resource/images/oilcard.png",
+			"resource/images/phonepay.png",
+			"resource/images/news.png",
+			"app/find/business/find.js",
+			"resource/images/more.png",
+			"resource/images/nationprice.png",
+			"resource/images/lifepay.png",
+			"app/find/business/find.css"
+		],
+		"refer": []
+	},
+	"app/customer/list/list.html": {
+		"resources": [
+			"resource/images/shuxian.png",
+			"app/customer/list/list.js",
+			"resource/images/search.png",
+			"app/customer/list/list.css",
+			"css/comm.css",
+			"resource/images/car02.png",
+			"resource/images/car0340.png",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"lib/vue.js",
+			"lib/mui/js/mui.poppicker.js",
+			"config/config.js",
+			"lib/app.js",
+			"lib/mui/js/mui.pullToRefresh.material.js",
+			"lib/mui/js/mui.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"resource/images/car01.png"
+		],
+		"refer": [
+			"app/customer/detail/detail.html"
+		]
+	},
+	"app/home/head/head.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"app/home/head/head.css",
+			"lib/mui/css/mui.picker.all.css",
+			"lib/mui/fonts/mui.ttf",
+			"resource/images/camera.png",
+			"lib/require/require.js",
+			"resource/images/order_pic.png",
+			"css/comm.css",
+			"resource/images/bill_pic.png",
+			"lib/mui/js/mui.js",
+			"app/image/upload/image-upload.js",
+			"app/home/head/head.js",
+			"lib/validate.js",
+			"config/config.js",
+			"lib/mui/js/mui.poppicker.js",
+			"lib/mui/js/mui.pullToRefresh.material.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/vue.js",
+			"lib/app.js"
+		],
+		"refer": [
+			"app/vehicle/info/info.html",
+			"app/order/main/main.html",
+			"app/book/list/list.html",
+			"app/product/detail/detail.html"
+		]
+	},
+	"app/find/find/find.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"app/find/find/find.css",
+			"lib/require/require.js",
+			"css/comm.css",
+			"app/find/find/find.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/vue.js",
+			"lib/validate.js",
+			"lib/app.js",
+			"config/config.js",
+			"lib/mui/js/mui.js"
+		],
+		"refer": [
+			"app/find/help/help.html",
+			"app/find/news/news.html",
+			"app/find/notice/notice.html"
+		]
+	},
+	"app/user/update/update.html": {
+		"resources": [
+			"resource/images/crema_blue.png",
+			"app/user/update/update.js",
+			"app/user/update/update.css",
+			"lib/validate.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"lib/app.js"
+		],
+		"refer": [
+			"app/user/upload/upload.html",
+			"app/user/userInfo/userInfo.html"
+		]
+	},
+	"app/user/upload/upload.html": {
+		"resources": [
+			"resource/images/front.png",
+			"lib/lc-plus-wx.js",
+			"app/user/upload/upload.js",
+			"lib/payments/plusPayment.js",
+			"resource/images/reverse.png",
+			"lib/imgUpload/plusUpload.js",
+			"app/user/upload/upload.css",
+			"css/comm.css",
+			"config/config.js",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js"
+		],
+		"refer": []
+	},
+	"app/vehicle/info/info.html": {
+		"resources": [
+			"app/order/confirm/confirm.css",
+			"app/vehicle/search/search.js",
+			"lib/lc-plus-wx.js",
+			"app/vehicle/confirm/confirm.html",
+			"resource/images/vehicle/driving_tips.png",
+			"app/vehicle/confirm/confirm.js",
+			"lib/imgUpload/plusUpload.js",
+			"lib/mui/css/mui.picker.min.css",
+			"lib/mui/js/mui.dtpicker.js",
+			"app/vehicle/search/search.html",
+			"app/vehicle/search/search.css",
+			"app/vehicle/select/select.js",
+			"lib/payments/plusPayment.js",
+			"app/vehicle/info/info.css",
+			"app/vehicle/info/info.js",
+			"lib/require/require-text.js",
+			"app/vehicle/select/select.html",
+			"app/vehicle/select/select.css",
+			"resource/images/car01.png",
+			"lib/mui/js/mui.poppicker.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/validate.js",
+			"css/comm.css",
+			"config/config.js",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js"
+		],
+		"refer": [
+			"app/insurance/company/company.html"
+		]
+	},
+	"app/insurance/company/company.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"app/insurance/company/company.css",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js",
+			"app/insurance/company/company.js"
+		],
+		"refer": [
+			"app/insurance/set/set.html"
+		]
+	},
+	"app/insurance/set/set.html": {
+		"resources": [
+			"lib/mui/js/mui.poppicker.js",
+			"lib/mui/css/mui.poppicker.css",
+			"app/insurance/set/set.css",
+			"lib/mui/js/mui.picker.js",
+			"lib/mui/css/mui.picker.css",
+			"app/insurance/set/set.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js",
+			"lib/validate.js"
+		],
+		"refer": [
+			"app/image/upload/upload.html",
+			"app/order/detail/detail.html"
+		]
+	},
+	"app/order/main/main.html": {
+		"resources": [
+			"app/order/all/all.css",
+			"resource/images/order/car.png",
+			"app/order/payment/payment.css",
+			"app/order/payment/payment.html",
+			"app/order/all/all.html",
+			"app/order/payment/payment.js",
+			"app/order/wait/wait.html",
+			"app/order/wait/wait.js",
+			"app/order/main/main.css",
+			"app/order/all/all.js",
+			"lib/require/require-text.js",
+			"lib/mui/js/mui.pullToRefresh.material.js",
+			"app/order/wait/wait.css",
+			"app/order/main/main.js",
+			"css/comm.css",
+			"config/config.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js"
+		],
+		"refer": [
+			"app/order/detail/detail.html",
+			"app/vehicle/info/info.html"
+		]
+	},
+	"app/order/detail/detail.html": {
+		"resources": [
+			"app/order/detail/detail.js",
+			"app/order/detail/detail.css",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"css/comm.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"config/config.js",
+			"lib/app.js"
+		],
+		"refer": [
+			"app/insurance/change/change.html",
+			"app/order/view/view.html",
+			"app/order/distribution/distribution.html"
+		]
+	},
+	"app/insurance/change/change.html": {
+		"resources": [
+			"app/insurance/change/change.css",
+			"app/insurance/change/change.js",
+			"lib/mui/css/mui.poppicker.css",
+			"lib/mui/css/mui.picker.css",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"css/comm.css",
+			"lib/mui/js/mui.poppicker.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/validate.js"
+		],
+		"refer": [
+			"app/image/upload/upload.html",
+			"app/order/detail/detail.html"
+		]
+	},
+	"app/image/upload/upload.html": {
+		"resources": [
+			"app/image/upload/upload.css",
+			"resource/images/thumbnail.jpg",
+			"app/image/upload/upload.js",
+			"app/image/upload/image-upload.js"
+		],
+		"refer": []
+	},
+	"app/user/userInfo/userInfo.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"app/user/userInfo/userInfo.js",
+			"app/user/userInfo/userInfo.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"lib/app.js"
+		],
+		"refer": [
+			"app/setting/setting.html"
+		]
+	},
+	"app/card/list/card.html": {
+		"resources": [
+			"app/card/list/card.css",
+			"app/card/list/card.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/md5.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js"
+		],
+		"refer": [
+			"app/card/addcard/addcard.html"
+		]
+	},
+	"app/mall/order/list/list.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/md5.js",
+			"lib/vue.js",
+			"app/mall/order/list/list.js",
+			"app/mall/order/list/list.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js",
+			"lib/mui/js/mui.pullToRefresh.js"
+		],
+		"refer": []
+	},
+	"app/team/list/list.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js",
+			"app/team/list/list.js",
+			"app/team/list/list.css",
+			"lib/mui/js/mui.pullToRefresh.js"
+		],
+		"refer": []
+	},
+	"app/book/list/list.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/md5.js",
+			"lib/vue.js",
+			"app/book/list/list.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js",
+			"app/book/list/list.css",
+			"lib/mui/js/mui.pullToRefresh.js"
+		],
+		"refer": []
+	},
+	"app/asset/asset.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/md5.js",
+			"lib/vue.js",
+			"app/asset/asset.css",
+			"lib/mui/fonts/mui.ttf",
+			"app/asset/asset.js",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js"
+		],
+		"refer": []
+	},
+	"app/order/view/view.html": {
+		"resources": [
+			"app/order/view/view.js",
+			"resource/fonts/order/order.ttf",
+			"lib/area.js",
+			"app/order/view/view.css"
+		],
+		"refer": []
+	},
+	"app/order/distribution/distribution.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/js/mui.poppicker.js",
+			"app/order/distribution/distribution.css",
+			"lib/mui/js/mui.picker.js",
+			"lib/mui/css/mui.picker.all.css",
+			"lib/mui/fonts/mui.ttf",
+			"app/order/distribution/distribution.js",
+			"lib/area.js",
+			"lib/require/require.js",
+			"lib/validate.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js"
+		],
+		"refer": [
+			"app/order/confirm/confirm.html"
+		]
+	},
+	"app/payment/payment.html": {
+		"resources": [
+			"resource/images/payment/balance.png",
+			"resource/images/payment/online.png",
+			"app/payment/payment.js",
+			"app/payment/payment.css"
+		],
+		"refer": [
+			"app/outsideWeb/outsideWeb.html"
+		]
+	},
+	"app/outsideWeb/outsideWeb.html": {
+		"resources": [
+			"app/outsideWeb/outsideWeb.js"
+		],
+		"refer": []
+	},
+	"app/order/confirm/confirm.html": {
+		"resources": [
+			"app/order/confirm/confirm.js",
+			"app/order/confirm/confirm.css"
+		],
+		"refer": [
+			"app/payment/payment.html"
+		]
+	},
+	"app/product/buy/buy.html": {
+		"resources": [
+			"lib/mui/css/mui.picker.min.css",
+			"app/product/buy/buy.css",
+			"app/product/buy/buy.js",
+			"lib/area.js",
+			"lib/mui/js/mui.poppicker.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/validate.js"
+		],
+		"refer": [
+			"app/product/confirm/confirm.html"
+		]
+	},
+	"app/product/detail/detail.html": {
+		"resources": [
+			"app/product/detail/detail.css",
+			"resource/images/product/cbd.jpg",
+			"app/product/detail/detail.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js"
+		],
+		"refer": [
+			"app/product/buy/buy.html"
+		]
+	},
+	"app/product/confirm/confirm.html": {
+		"resources": [
+			"app/product/confirm/confirm.js",
+			"app/product/confirm/confirm.css",
+			"lib/lc-plus-wx.js",
+			"lib/payments/plusPayment.js",
+			"lib/imgUpload/plusUpload.js"
+		],
+		"refer": []
+	},
+	"app/customer/detail/detail.html": {
+		"resources": [
+			"app/customer/detail/detail.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"app/customer/detail/detail.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js"
+		],
+		"refer": [
+			"app/customer/vehicle/vehicle.html"
+		]
+	},
+	"app/customer/vehicle/vehicle.html": {
+		"resources": [
+			"app/customer/vehicle/vehicle.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"css/comm.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"config/config.js",
+			"lib/app.js"
+		],
+		"refer": []
+	},
+	"app/find/help/help.html": {
+		"resources": [
+			"css/comm.css",
+			"config/config.js",
+			"lib/validate.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"app/find/help/help.css",
+			"lib/mui/fonts/mui.ttf",
+			"resource/images/search.png",
+			"lib/require/require.js",
+			"app/find/help/help.js"
+		],
+		"refer": []
+	},
+	"app/find/news/news.html": {
+		"resources": [
+			"css/comm.css",
+			"config/config.js",
+			"lib/validate.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"resource/images/envelop.png",
+			"app/find/news/news.css",
+			"lib/mui/fonts/mui.ttf",
+			"app/find/news/news.js",
+			"lib/require/require.js"
+		],
+		"refer": []
+	},
+	"app/find/notice/notice.html": {
+		"resources": [
+			"app/find/notice/notice.js",
+			"css/comm.css",
+			"config/config.js",
+			"lib/validate.js",
+			"lib/mui/js/mui.pullToRefresh.js",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"resource/images/envelop.png",
+			"app/find/news/news.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js"
+		],
+		"refer": []
+	},
+	"app/password/change/change.html": {
+		"resources": [
+			"app/password/change/change.js"
+		],
+		"refer": []
+	},
+	"app/password/reset/reset.html": {
+		"resources": [
+			"app/password/reset/reset.js",
+			"lib/mui/fonts/mui.ttf"
+		],
+		"refer": []
+	},
+	"app/user/base/user.html": {
+		"resources": [
+			"lib/md5.js",
+			"app/user/base/user.js",
+			"app/user/base/user.css",
+			"resource/images/starOne.png",
+			"css/comm.css",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"lib/app.js",
+			"resource/images/starZero.png"
+		],
+		"refer": []
+	},
+	"app/card/addcard/addcard.html": {
+		"resources": [
+			"app/card/addcard/addcard.css",
+			"app/card/addcard/addcard.js",
+			"lib/mui/js/mui.poppicker.js",
+			"lib/mui/js/mui.picker.js",
+			"lib/mui/css/mui.picker.all.css",
+			"lib/area.js",
+			"lib/validate.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"css/comm.css"
+		],
+		"refer": [
+			"app/card/banklist/banklist.html",
+			"app/card/corrBankList/corrBankList.html"
+		]
+	},
+	"app/card/banklist/banklist.html": {
+		"resources": [
+			"app/card/banklist/banklist.css",
+			"app/card/banklist/banklist.js",
+			"lib/area.js",
+			"css/comm.css",
+			"config/config.js",
+			"lib/validate.js",
+			"lib/app.js",
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/md5.js",
+			"lib/vue.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js"
+		],
+		"refer": []
+	},
+	"app/card/corrBankList/corrBankList.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"lib/md5.js",
+			"lib/vue.js",
+			"app/card/corrBankList/corrBankList.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"app/card/corrBankList/corrBankList.css",
+			"css/comm.css",
+			"lib/app.js"
+		],
+		"refer": []
+	},
+	"app/scan/cashier/cashier.html": {
+		"resources": [
+			"lib/mui/css/mui.min.css",
+			"lib/mui/js/mui.js",
+			"app/scan/cashier/cashier.js",
+			"lib/vue.js",
+			"app/scan/cashier/keyboard.js",
+			"lib/mui/fonts/mui.ttf",
+			"lib/require/require.js",
+			"config/config.js",
+			"css/comm.css",
+			"lib/app.js",
+			"app/scan/cashier/cashier.css"
+		]
+	}
+}

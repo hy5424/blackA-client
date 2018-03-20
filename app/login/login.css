@@ -1,0 +1,32 @@
+.forget-pwd {
+	display: block;
+	margin-top: 25px;
+	text-align: right;
+	color: white;
+}
+
+.content-bg {
+	background-color: white;
+}
+
+.login-btn {
+	margin-top: 20px;
+}
+
+.img-w {
+	width: 100%;
+}
+
+.btm-call {
+	padding: 10px 0 5px 10px;
+	color: #bcbcbc;
+}
+
+.blank-div {
+	height: 10px;
+	background-color: transparent;
+}
+
+html {
+	height: 100%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+		<meta http-equiv="content-security-policy">
+		<link rel="stylesheet" type="text/css" href="../../lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/comm.css" />
+		<link rel="stylesheet" type="text/css" href="login.css" />
+
+	</head>
+
+	<body>
+		<header></header>
+		<article class="mui-content content-bg" id='idlogin' v-cloak>
+			<div id="idcontent">
+				<!--<div class="head-img">
+					<img src="../../resource/images/login_logo.jpg" class="img-w" />
+				</div>-->
+				<div class="mui-content-padded">
+
+					<form class="mui-input-group">
+						<div class="mui-input-row">
+							<label>账号</label>
+							<input id='account' type="number" v-model="loginName" class="mui-input-clear" placeholder="注册时输入的手机号">
+						</div>
+						<div class="mui-input-row">
+							<label>密码</label>
+							<input id='password' type="password" v-model="password" class="mui-input-clear" placeholder="初始值为短信验证码">
+						</div>
+						<div class="cm-btn-warp">
+							<button v-on:click.prevent="doRegister" type="button" class="mui-btn cm-btn-submit register-btn">注册</button>
+						</div>
+						<div class="cm-btn-warp">
+							<button v-on:click.prevent="doLogin" type="button" class="mui-btn cm-btn-submit login-btn">登录</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+			<div id="idblank" class="blank-div">
+			</div>
+			<!--<div class="btm-call" @tap="call" v-if="isShow">
+				<span class="mui-icon mui-icon-phone"></span>
+				<strong>联系我们 4006-799-866</strong>
+			</div>-->
+		</article>
+
+	</body>
+	<script src="../../lib/require/require.js" data-main="login"></script>
+
+</html>
