@@ -27,7 +27,7 @@ if(url.indexOf('apps')!=-1){
 	hrefArry= array1.split('app')[1].split('');
 }
 // 兼容配web
-if(url.indexOf('csh-h5')!=-1){
+if(url.indexOf('blackA-client')!=-1){
 	hrefArry= url.split('app')[1].split('');
 }
 // 兼容demo

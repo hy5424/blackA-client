@@ -4,10 +4,12 @@
 require(['../../config/config'], function() {
 	var deps = ['app', 'vue', 'appPlus'];
 	require(deps, function(app, Vue, appPlus) {
-
 		var websocket = null;
 
-		appPlus.plusReady(function() {
+		listInit(); //页面初始化
+
+		function listInit() {
+			appPlus.landscape;
 			websocket = new WebSocket("ws://192.168.1.104:8081/blackA/websocket");
 
 			//连接发生错误的回调方法  
@@ -20,32 +22,6 @@ require(['../../config/config'], function() {
 				alert("WebSocket连接成功");
 			}
 
-			//接收到消息的回调方法  
-			websocket.onmessage = function(event) {
-
-				var callBackMsg = event.data;
-				var json = JSON.parse(callBackMsg);
-				switch(json.code) {
-					case "order":
-						alert("我的序号：" + json.response.msg);
-						break;
-
-					case "ready":
-						alert("我的牌：" + json.response.msg);
-						break;
-
-					case "play":
-						alert("我的大小：" + json.response.msg);
-						break;
-
-					case "isType":
-						alert("我的牌型：" + json.response.msg);
-						break;
-					default:
-						break;
-				}
-			}
-
 			//连接关闭的回调方法  
 			websocket.onclose = function() {
 				alert("WebSocket连接关闭");
@@ -55,9 +31,50 @@ require(['../../config/config'], function() {
 			window.onbeforeunload = function() {
 				closeWebSocket();
 			}
-		});
+		};
 
-		//测试
+		function play_a_hand(num) {
+			var cards = null;
+			var id = document.getElementById(num);
+			id.style = {
+				"margin-top": "10px",
+				"border-bottom-width": "10px",
+				"border-botton-color": "white",
+				"border-bottom-style": "solid"
+			};
+			card += num + ",";
+		}
+
+		//接收到消息的回调方法  
+		websocket.onmessage = function(event) {
+			var callBackMsg = event.data;
+			var json = JSON.parse(callBackMsg);
+			switch(json.code) {
+				case "order":
+					alert("我的序号：" + json.response.msg);
+
+					break;
+
+				case "ready":
+					var deal = JSON.parse(json.response.msg);
+					
+					break;
+
+				case "play":
+					alert("我的大小：" + json.response.msg);
+
+					break;
+
+				case "isType":
+					alert("我的牌型：" + json.response.msg);
+
+					break;
+
+				default:
+					break;
+			}
+		}
+
 		var loginVm = new Vue({
 			el: '#idTest',
 			methods: {
@@ -84,5 +101,6 @@ require(['../../config/config'], function() {
 
 			}
 		});
+
 	});
 });
